@@ -1,0 +1,35 @@
+Create script called getngrams.py. 
+
+Your script should define the following function:
+
+processSentence(sentence,posLex,negLex,tagger,c):  The parameters of this function are a sentence (a string), a set positive words, a set of negative words, a POS tagger, and a character c.  The function should return 
+
+a list with all the n-grams in the sentence that have the following structure:                                                   
+
+not <any word> <ADV?> <pos/neg word> <NOUN(c)>. 
+
+The symbol <ADV?> means "an adverb or nothing"
+
+The symbol <NOUN(c)> means "a noun that includes the character c" 
+
+For example if c=='e', the following sentences would match:
+
+-  not a very good idea
+
+ 
+
+- not a good idea
+
+The following sentences would not match:
+
+- not  always a  good  idea   (it doesn't match because 'a' is not an adverb).
+
+-  not a very good car  (it doesn't match because there is no 'e' in 'car')
+
+ 
+
+Notes:
+
+Don't change the names or the parameters of the function
+Make sure that your script imports all the libraries needed by the function
+When you look for the character c, make sure to ignore case. For example, if c=='f', then both 'food' and 'Food' should match.

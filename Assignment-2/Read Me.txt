@@ -1,0 +1,12 @@
+Create a script called webcounter.py
+
+- The script should define a function run() with 1 parameter: a link to webpage
+
+- The function should return a dictionary that includes a key for every word in the webpage. The corresponding value should be a list. The list should include two numbers:  The first number should be the number of words in the webpage that have a higher frequency than the word (N1).  The second number should be the number of words in the webpage that have a lower frequency than the word (N2).
+
+- Ignore case.
+
+- Remove all non-letter characters before you count
+
+- Ignore stopwords. Your dictionary should NOT have stopwords as keys. Stopwords should also NOT be counted when you compute N1 and N2 for each word.
+
